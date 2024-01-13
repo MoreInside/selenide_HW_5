@@ -5,13 +5,12 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-import static org.openqa.selenium.remote.tracing.EventAttribute.setValue;
 
 
-public class selenideTests {
+public class SelenideTests {
 
     @BeforeAll
-    static void beforeAll() {
+     static void beforeAll() {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
@@ -20,7 +19,7 @@ public class selenideTests {
     }
 
     @Test
-    void fillFormTest() {
+     void selenideHomework() {
         //Открыть ресурс
         open("https://github.com/");
 
