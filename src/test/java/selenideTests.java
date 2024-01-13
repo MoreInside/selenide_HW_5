@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static org.openqa.selenium.remote.tracing.EventAttribute.setValue;
 
 
-public class SelenideTests {
+public class selenideTests {
 
     @BeforeAll
     static void beforeAll() {
