@@ -14,7 +14,7 @@ public class SelenideTests {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
-        //Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = true;
         Configuration.timeout = 5000; // default 4000
     }
 
@@ -41,7 +41,7 @@ public class SelenideTests {
 
         //Открыть страницу SoftAssertion; проверить, что внутри есть пример кода для JUnit5
         $(byText("Soft assertions")).click();
-        $(".markdown-body").shouldHave(text("@Listeners({ SoftAsserts.class})"));
+        $(".markdown-body").shouldHave(text("@ExtendWith({SoftAssertsExtension.class})"));
 
     }
 }
