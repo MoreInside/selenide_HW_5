@@ -1,7 +1,6 @@
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.Keys;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.DragAndDropOptions.to;
@@ -14,10 +13,10 @@ public class SelenideTests2 {
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
         //Configuration.holdBrowserOpen = true;
-        Configuration.timeout = 5000; // default 4000
+        //Configuration.timeout = 5000; // default 4000
     }
     @Test
-    void selenideHomework_2 (){
+    void selenideHomework2 (){
 
         open("https://github.com/");
 
@@ -30,7 +29,7 @@ public class SelenideTests2 {
     }
 
     @Test
-    void selenideHomework_2_1 () {
+    void selenideHomework21 () {
 
         //Запрограммируйте Drag&Drop с помощью Selenide.actions()
         open("https://the-internet.herokuapp.com/drag_and_drop");
@@ -44,7 +43,7 @@ public class SelenideTests2 {
     }
 
     @Test
-    void selenideHomework_2_2() {
+    void selenideHomework22() {
 
             open("https://the-internet.herokuapp.com/drag_and_drop");
             actions().clickAndHold($("#column-a")).moveToElement($("#column-b")).release().perform();
